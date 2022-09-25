@@ -1,0 +1,21 @@
+{
+  "name": "pwd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "runTestsandRecord": "cypress run --spec cypress/integration/BDD/customer/createCustomer.js --browser chrome --record --key e522a7b2-f88f-4e66-93f7-8666d8fd35be"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mocha": "^9.1.4",
+    "mochawesome": "^7.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

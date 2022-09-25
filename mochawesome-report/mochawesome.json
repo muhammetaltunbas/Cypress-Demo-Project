@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-16T23:41:20.316Z",
+    "end": "2022-09-16T23:41:29.396Z",
+    "duration": 9080,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "198d76f2-3925-4e11-8959-ae1a3484fd15",
+      "title": "",
+      "fullFile": "cypress/integration/BDD/agileTravel.feature",
+      "file": "cypress/integration/BDD/agileTravel.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "baeb0d8a-1b0f-4be4-abb6-5ce01480ddb7",
+          "title": "Checking login functionality for travel.agileway.net",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Checking login functionality for proper login credential (example #1)",
+              "fullTitle": "Checking login functionality for travel.agileway.net Checking login functionality for proper login credential (example #1)",
+              "timedOut": null,
+              "duration": 6497,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#username`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#username`, but never found it.\n    at ensureExistence (https://katanamrp.com/__cypress/runner/cypress_runner.js:163642:25)\n    at $Cy.ensureElExistence (https://katanamrp.com/__cypress/runner/cypress_runner.js:163660:12)\n    at ensureExistence (https://katanamrp.com/__cypress/runner/cypress_runner.js:150857:25)\n    at onFailFn (https://katanamrp.com/__cypress/runner/cypress_runner.js:150897:11)\n    at tryCatcher (https://katanamrp.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (https://katanamrp.com/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (https://katanamrp.com/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (https://katanamrp.com/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (https://katanamrp.com/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (https://katanamrp.com/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (https://katanamrp.com/__cypress/runner/cypress_runner.js:7896:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://katanamrp.com/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (https://katanamrp.com/__cypress/runner/cypress_runner.js:7782:14)",
+                "diff": null
+              },
+              "uuid": "6ad27713-8e9a-4071-ab20-d80c2756476b",
+              "parentUUID": "baeb0d8a-1b0f-4be4-abb6-5ce01480ddb7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6ad27713-8e9a-4071-ab20-d80c2756476b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6497,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
